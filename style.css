@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  background: url("https://media.discordapp.net/attachments/822171175123812366/1022849024044322817/unknown.png");
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
   background: #ecf4ff;
   color: #1c1c1c;
-  box-shadow: 6px 6px 6px #0e1d2f;
+  box-shadow: 6px 6px 6px #040b11;
   border-radius: 20px;
   margin: 64px;
   padding: 64px;
@@ -21,12 +24,13 @@ body {
 
 .profile {
   display: flex;
+  flex-direction: row;
 }
 
 .profile-img {
   border-radius: 460px;
-  max-height: 160px;
-  max-width: 160px;
+  max-height: 200px;
+  max-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -37,29 +41,50 @@ body {
 .profile-title h1 {
   font-weight: 700;
   font-size: 36px;
+  color: #040b11;
 }
 
 .profile-title h3 {
   font-weight: 400;
   font-size: 24px;
+  color: #040b11;
 }
 
-.theme button {
-  align-self: flex-end;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 8px 16px;
+.link-social {
   cursor: pointer;
-  background: #ecf4ff;
-  border: 2px solid #0e1d2f;
-  border-radius: 100px;
-  color: #0e1d2f;
+  transition: opacity 0.2s;
+}
+
+.link-social:hover {
+  opacity: 0.7
+}
+
+.badges {
+  display: flex;
+  flex-direction: row;
+}
+
+.badges-img {
+  transition: 0.5s all;
+  filter: grayscale(100%);
+  filter: brightness(0);
+}
+
+.badges-img:hover {
+  transition: 0.5s all;
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.projects-columm {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .projects {
-  display: flex;
+  flex: 1;
   flex-direction: column;
-  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  background: url("https://media.discordapp.net/attachments/822171175123812366/1022865435181457501/unknown.png");
   box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
   border-radius: 20px;
   margin-top: 32px;
@@ -68,12 +93,12 @@ body {
 
 .projects-title {
   list-style: none;
-  text-align: center;
+  text-align: left;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  color: #1c1c1c;
+  color: #ecf4ff;
 }
 
 .projects-itens {
@@ -81,24 +106,50 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 48px;
-  color: #1c1c1c;
+  color: #ecf4ff;
 }
 
-.projects-itens a {
-  color: #1c1c1c;
+.aboutme {
+  flex: 1;
+  background: url("https://media.discordapp.net/attachments/822171175123812366/1022865435181457501/unknown.png");
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  margin-top: 32px;
+  padding: 25px;
 }
 
-.darkTheme {
-  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+.aboutme h1 {
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ecf4ff;
 }
 
-.darkTheme .container {
-  background: #333439;
-  color: #f6f6f6;
+.aboutme p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: #ecf4ff;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.darkTheme .theme button {
-  background: #1c1c1c;
-  color: #f6f6f6;
-  border: 2px solid #f6f6f6;
+.var {
+  color: #5cb6e0;
+}
+
+.copy-right {
+  display: flex;
+}
+
+.copy-right-sec {
+	padding: 1.8rem;
+  background: #ecf4ff;
+  text-align: center;
+ 	font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  color: #040b11;
 }
